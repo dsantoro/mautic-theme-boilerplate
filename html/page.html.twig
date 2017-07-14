@@ -1,0 +1,98 @@
+{% extends ":"~template~":base.html.twig" %}
+
+{% block content %}
+
+<div class="page-wrap">
+
+	<header class="wrap-header" data-section-wrapper>
+
+		<div class="row" data-section>
+
+			<div class="small-12 columns" data-slot-container>
+
+				<div class="row collapse flex align-center">
+
+					<div class="small-2 columns">
+
+							<div data-slot="image" >
+								<img src="{{ getAssetUrl('themes/'~template~'/img/logo.png', null, null, true) }}" alt="Pousada Serra Gaúcha" title="Pousada Serra Gaúcha" />
+							</div>
+						</a>
+					</div>
+					<div class="small-10 columns">
+
+						<div data-slot="text">
+							<h2>Serra Gaúcha com uma super vantagem</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- Fecha ROW -->
+	</header>
+
+	<div data-section-wrapper>
+
+		<section class="hero" data-section>
+
+			<div class="hero-image" data-slot-container>
+				
+				<div data-slot="image">
+					<img src="{{ getAssetUrl('themes/'~template~'/img/bg-hero.jpg', null, null, true) }}" alt="">
+				</div>
+			</div>
+
+			<div class="card-form" data-slot-container>
+
+				<form class="clearfix">
+
+					<div data-slot="text">
+						<p>Receba uma vantagem exclusiva preenchendo o formulário: </p>
+					</div>
+
+					<!-- <label>Nome *</label>
+					<input type="text" name="nome" required />
+
+					<label>Email *</label>
+					<input type="text" name="email" required />
+
+					<label>Telefone *</label>
+					<input type="text" name="telefone" required />
+
+					<button class="btn-default full">Receber Vantagem</button> -->
+				</form>
+			</div>
+		</section>
+	</div>
+
+	<div data-section-wrapper>
+
+		<section class="container info-content" data-section>
+
+			<div class="row">
+
+				<div class="small-12 medium-6 large-5 large-offset-1 columns" data-slot-container>
+
+					<div data-slot="image">
+
+						<img src="{{ getAssetUrl('themes/'~template~'/img/480x320.png', null, null, true) }}">
+					</div>
+				</div>
+				<div class="small-12 medium-6 large-5 end columns" data-slot-container>
+
+					<div data-slot="text">
+
+						<p>A sua estadia na Serra Gaúcha poderá ser inesquecível, já imaginou? A nossa pousada está pronta para te proporcionar muito aconchego e conforto!</p>
+
+						<p>Você está preparado para aproveitar o melhor da Serra Gaúcha com diversos benefícios? Nós queremos te oferecer uma <strong>super vantagem</strong>!</p>
+
+						<p><strong>Estamos te esperando para viver uma ótima experiência!</strong></p>
+					</div>
+				</div>
+			</div><!-- Fecha ROW -->
+		</section>
+	</div>
+</div>
+
+<footer class="site-footer" data-section-wrapper></footer>
+
+{% endblock %}
